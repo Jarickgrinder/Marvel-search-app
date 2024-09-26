@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Marvel Character Search</title>
+    <link rel="icon" href="../assets/img/marvel_m_logo.png">
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous">
+    </script>
+    <link rel="icon" type="image/png" href="../marvel_images/marvel_favicon.png">
+    <script>
+        $(function() {
+          $('#header').load('header.html');
+          $('#footer').load('footer.html');
+        });
+      </script> 
+  </head>
+
+
+  <body>
+    <div id="header"></div>
+
+    <section class="section">
+      <h2 class="heading bangers-regular">SEARCH CHARACTER</h2>
+      <p class="paragraph caveat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores quam ex delectus labore hic neque atque suscipit temporibus. Rerum minima, vero consequatur voluptatum earum repudiandae sapiente! Magnam, quibusdam earum.</p>
+    <nav>
+      <div id='nav-container'>
+        <form action='#'>
+          <input type='text' size='35' placeholder='Search for a Marvel character...' autofocus>
+          <button type='submit' id='search-button'>Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <section class='search-results-section' hidden>
+      <div class='search-results-title'>
+        Search Results
+      </div>
+      <div class='search-results'>
+      </div>
+    </section>
+
+    <main role='main'>
+      <section class='main-unknown-section' aria-live='assertive' hidden>
+        <div class='unknown-section'></div>
+      </section>
+      <section class='main-results-section' aria-live='assertive' hidden>
+        <div class='results-section'></div>
+      </section>
+      <section class='main-events-section' aria-live='assertive' hidden>
+        <h2 class='section-title'>EVENT APPEARANCES</h2><hr>
+        <div class='events-section'></div>
+      </section>
+      <section class='main-comics-section' aria-live='assertive' hidden>
+        <h2 class='section-title'>COMIC BOOK APPEARANCES</h2><hr>
+        <div class='comics-section'></div>
+      </section>
+
+    </main>
+
+    <section class='light-box-area' aria-live='assertive' hidden>
+    </section>
+  </section>
+
+    <div id="footer"></div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
